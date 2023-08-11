@@ -1,6 +1,7 @@
 {
   "name": "standalone-react",
-  "private": true,
+  "private": false,
+  "homepage": "https://gmartin323.github.io/personal-website/",
   "version": "1.0.4",
   "type": "module",
   "scripts": {
