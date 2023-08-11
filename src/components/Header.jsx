@@ -4,7 +4,7 @@ import { Link, NavLink } from "react-router-dom"
 export default function Header() {
   return (
     <header>
-      <Link to="/">George Martin React Developer</Link>
+      <Link to="/" className="site-logo">George Martin React Developer</Link>
       <nav>
         <NavLink to="/portfolio">Portfolio</NavLink>
         <NavLink to="/blog">Blog</NavLink>
