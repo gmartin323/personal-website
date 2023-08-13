@@ -32,7 +32,9 @@ body {
 }
 
 header {
+  outline: 1px dashed orange;
   height: 110px;
+  width: 100%;
   display: flex;
   align-items: center;
   padding-block: 10px;
@@ -59,10 +61,12 @@ header a:hover {
 }
 
 nav {
+  outline: 1px dashed green;
   display: flex;
 }
 
 main {
+  outline: 1px dashed blueviolet;
   margin-bottom: 84px;
 }
 
