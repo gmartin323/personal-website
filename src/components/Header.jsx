@@ -36,10 +36,17 @@ export default function Header() {
           GM
         </Link>
         <button onClick={switchTheme}>
-          <i className="fa-solid fa-sun fa-xl"></i>
-          <i className="fa-regular fa-sun fa-xl"></i>
+          {theme.id === "light" ? 
+            <i className="fa-solid fa-sun fa-xl"></i> : 
+            <i className="fa-solid fa-sun fa-xl" style={{color: "#ff6600"}}></i>
+          }
         </button>
-        <button className="hamburger-btn" onClick={toggleNav}><i className="fa-solid fa-bars fa-xl"></i></button>
+        <button 
+          className="hamburger-btn" 
+          onClick={toggleNav}
+        >
+          <i className="fa-solid fa-bars fa-xl"></i>
+        </button>
       </div>
       <nav className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
         <NavLink 
