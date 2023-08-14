@@ -20,18 +20,21 @@ export default function Header() {
   }
 
   return (
-    <header>
+    <header 
+      style={{
+        backgroundColor: theme.background,
+      }}
+    >
       <div 
         className="header-top"
-        style={{
-          backgroundColor: theme.backgroundColor,
-          color: theme.color
-        }}
       >
         <Link 
           to="/" 
           className="site-logo" 
           onClick={() => setIsNavExpanded(false)}
+          style={{
+            color: theme.color
+          }}
         >
           GM
         </Link>
@@ -44,6 +47,10 @@ export default function Header() {
         <button 
           className="hamburger-btn" 
           onClick={toggleNav}
+          style={{
+            backgroundColor: theme.background,
+            color: theme.color
+          }}
         >
           <i className="fa-solid fa-bars fa-xl"></i>
         </button>
