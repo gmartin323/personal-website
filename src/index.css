@@ -32,20 +32,26 @@ body {
 }
 
 header {
-  outline: 1px dashed orange;
-  height: 110px;
+  outline: 1px dashed orange; 
   width: 100%;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  
   padding-block: 10px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;  
+  font-size: 1.5rem;
 }
 
 header .site-logo {
   color: black;
-  margin-right: auto;
+  /* margin-right: auto; for wider screens */
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 25px;
 }
 
 header a {
@@ -60,8 +66,23 @@ header a:hover {
   text-decoration: underline;
 }
 
-nav {
+header button {
+  border: none;
+  background-color: inherit;
+  padding: 5px 20px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.navigation-menu {
   outline: 1px dashed green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.25rem;
+}
+
+.navigation-menu.expanded {
   display: flex;
 }
 
@@ -89,7 +110,33 @@ footer {
 
 /* MEDIA QUERIES */
 
+@media screen and (max-width: 768px) {
+  .navigation-menu {
+    display: none;
+  }
+}
 
+@media screen and (min-width: 768px) {
+  .hamburger-btn {
+    display: none;
+  }
+
+  header {
+    height: 110px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  header .site-logo {
+    font-size: 1.75rem;
+    margin-right: auto;
+  }
+
+  .navigation-menu {
+    flex-direction: row;
+  }
+
+}
 
 
 
