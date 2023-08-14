@@ -40,7 +40,7 @@ export default function Header() {
         </Link>
         <button onClick={switchTheme}>
           {theme.id === "light" ? 
-            <i className="fa-solid fa-sun fa-xl"></i> : 
+            <i className="fa-solid fa-sun fa-xl" style={{color: "#000000"}}></i> : 
             <i className="fa-solid fa-sun fa-xl" style={{color: "#ff6600"}}></i>
           }
         </button>
