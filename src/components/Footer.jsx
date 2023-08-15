@@ -3,7 +3,8 @@ import { ThemeContext } from "../themes/ThemeContext";
 
 export default function Footer() {
 
-  const { theme } = useContext(ThemeContext)  
+  const { theme } = useContext(ThemeContext)
+  
 
   return (
     <footer 

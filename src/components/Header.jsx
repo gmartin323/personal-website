@@ -24,61 +24,45 @@ export default function Header() {
         backgroundColor: theme.background,
       }}
     >
-      <div 
-        className="header-top"
+      <Link 
+        to="/" 
+        className="site-logo" 
+        onClick={() => setIsNavExpanded(false)}
+        style={{
+          color: theme.color
+        }}
       >
-        <Link 
-          to="/" 
-          className="site-logo" 
-          onClick={() => setIsNavExpanded(false)}
-          style={{
-            color: theme.color
-          }}
-        >
-          GM
-        </Link>
-        <button onClick={switchTheme}>
-          {theme.id === "light" ? 
-            <i className="fa-solid fa-sun fa-xl" style={{color: "#000000"}}></i> : 
-            <i className="fa-solid fa-sun fa-xl" style={{color: "#ff6600"}}></i>
-          }
-        </button>
-        <button 
-          className="hamburger-btn" 
-          onClick={toggleNav}
-
-
-          style={{
-            backgroundColor: theme.background,
-            color: theme.color
-          }}
-        >
-          <i className="fa-solid fa-bars fa-xl"></i>
-        </button>
-      </div>
-      <nav className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
+        George Martin
+      </Link>
+      <p>React Developer</p>
+      
+      
+      <nav className="navigation-menu">
         <NavLink 
           to="/portfolio"
           style={({ isActive }) => isActive ? activeStyles : null}
-          onClick={() => setIsNavExpanded(false)}
         >
           Portfolio
         </NavLink>
         <NavLink 
           to="/blog"
           style={({ isActive }) => isActive ? activeStyles : null}
-          onClick={() => setIsNavExpanded(false)}
         >
           Blog
         </NavLink>
         <NavLink 
           to="/contact"
           style={({ isActive }) => isActive ? activeStyles : null}
-          onClick={() => setIsNavExpanded(false)}
         >
           Contact
         </NavLink>
       </nav>
+      <button onClick={switchTheme}>
+          {theme.id === "light" ? 
+            <i className="fa-solid fa-sun fa-xl" style={{color: "#000000"}}></i> : 
+            <i className="fa-solid fa-sun fa-xl" style={{color: "#ff6600"}}></i>
+          }
+        </button>
     </header>
   )
 }

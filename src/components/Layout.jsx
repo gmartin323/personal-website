@@ -9,16 +9,19 @@ export default function Layout() {
   const { theme } = useContext(ThemeContext)  
 
   return (
-    <div className="site-wrapper"
-    style={{
-      backgroundColor: theme.background,
-      color: theme.color
-    }}>
-        <Header />
-        <main>
-          <Outlet />
-        </main>
-        <Footer />
+    <div>
+      <div 
+        className="site-wrapper"
+        style={{
+          backgroundColor: theme.background,
+          color: theme.color
+      }}>
+          <Header />
+          <main>
+            <Outlet />
+          </main>
+      </div>
+      <Footer />
     </div>
   )
 }
