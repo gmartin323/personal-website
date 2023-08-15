@@ -8,7 +8,7 @@ export default function Contact() {
 
   return (
     <div className="page-container">
-      <section className="contact-page-content-container">
+      <section className="contact-page-content-container short">
         <h1>Contact Page goes here</h1> 
       </section>
       <section className="contact-page-links-container">

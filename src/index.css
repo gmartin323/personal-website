@@ -134,6 +134,14 @@ main {
   justify-content: space-between;
 }
 
+.contact-page-content-container.tall {
+  height: calc(100vh - 66px);
+}
+
+.contact-page-content-container.short {
+  height: calc(100vh - 188px);
+}
+
 .contact-page-links-container {
   display: flex;
   gap: 1rem;
