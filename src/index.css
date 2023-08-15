@@ -91,9 +91,9 @@ header button {
   display: flex;
 }
 
-main {
+/* main {
   
-}
+} */
 
 .page-container {
   outline: purple 1px solid;
@@ -125,6 +125,21 @@ main {
 
 .home-page-content-container {
   background-color: bisque;
+}
+
+.portfolio-cards-container {
+  display: grid;
+  grid-template-columns: auto ;
+  grid-template-rows: auto auto auto auto;
+  gap: 1rem;
+  padding: 1rem 3rem;
+}
+
+.portfolio-card {
+  height: 131px;
+  width: 220px;
+  border: 2px black solid;
+  border-radius: 8px;
 }
 
 .contact-page-content-container {
@@ -201,6 +216,12 @@ footer {
   .home-page-hero.tall, 
   .home-page-hero.short {
     height: calc(100vh - 110px);
+  }
+  
+  .portfolio-cards-container {
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 3rem;
   }
   
 }
