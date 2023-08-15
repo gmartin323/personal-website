@@ -7,7 +7,6 @@ export default function Header() {
 
   const [isNavExpanded, setIsNavExpanded] = React.useState(false)
   const { theme, switchTheme } = useContext(ThemeContext)
-  console.log(theme)
 
   const activeStyles = {
     fontWeight: "bold",
@@ -47,6 +46,8 @@ export default function Header() {
         <button 
           className="hamburger-btn" 
           onClick={toggleNav}
+
+
           style={{
             backgroundColor: theme.background,
             color: theme.color
