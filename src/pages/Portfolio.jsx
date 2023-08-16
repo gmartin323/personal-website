@@ -13,7 +13,7 @@ export default function Portfolio() {
         color: theme.color
       }}
     >
-      <h1>Portfolio</h1>
+      {/* <h1>Portfolio</h1> */}
       <section className="cards-container">
         <div className="card" style={{backgroundImage:"url(images/projects/ideal-food-picker-react.png)"}}></div>
         <p className="card-info">Ideal Food Picker</p>

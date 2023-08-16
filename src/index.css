@@ -103,7 +103,7 @@ header button {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  padding: calc((20px*2) + 96px) calc(20px*2) 0 calc(20px*2);
+  padding: calc((20px) + 96px) calc(20px) 0 calc(20px);
   z-index: -1;
   /* padding-right: 20px; */
 }
@@ -111,7 +111,7 @@ header button {
 .cards-container {
   display: flex;
   flex-direction: column;
-  padding: 1rem 0;
+  padding-bottom: 1rem;
 }
 
 .card {

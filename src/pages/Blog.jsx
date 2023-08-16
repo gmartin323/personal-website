@@ -13,7 +13,7 @@ export default function Blog() {
         color: theme.color
       }}
     >
-      <h1>Blog</h1>
+      {/* <h1>Blog</h1> */}
       <section className="cards-container">
         <div className="card"></div>
         <p className="card-info">Blog 1</p>
