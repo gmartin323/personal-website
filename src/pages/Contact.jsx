@@ -7,7 +7,13 @@ export default function Contact() {
   const { theme } = useContext(ThemeContext)
 
   return (
-    <div className="page-container">
+    <div 
+      className="page-container"
+      style={{
+        backgroundColor: theme.background,
+        color: theme.color
+      }}
+    >
       <section className="contact-page-content-container short">
         <h1>Contact Page goes here</h1> 
       </section>

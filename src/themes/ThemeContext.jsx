@@ -5,6 +5,7 @@ export const themes = {
     id: "light",
     color: "#000000",
     background: "#FFFFFF",
+    headerBackground: "transparent",
     footerColor: "#aaaaaa",
     footerBackground: "#161616"
   },

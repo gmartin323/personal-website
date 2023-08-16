@@ -5,7 +5,6 @@ import { ThemeContext } from "../themes/ThemeContext"
 
 export default function Header() {
 
-  const [isNavExpanded, setIsNavExpanded] = React.useState(false)
   const { theme, switchTheme } = useContext(ThemeContext)
 
   const activeStyles = {
@@ -14,20 +13,15 @@ export default function Header() {
     color: "#161616"
 }
 
-  function toggleNav() {
-    setIsNavExpanded(!isNavExpanded)
-  }
-
   return (
     <header 
       style={{
-        backgroundColor: theme.background,
+        backgroundColor: theme.headerBackground,
       }}
     >
       <Link 
         to="/" 
-        className="site-logo" 
-        onClick={() => setIsNavExpanded(false)}
+        className="site-logo"
         style={{
           color: theme.color
         }}
