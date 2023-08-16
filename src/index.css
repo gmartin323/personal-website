@@ -115,8 +115,8 @@ header button {
 }
 
 .card {
-  height: calc(1080px/8);
-  width: calc(1920px/8);
+  height: calc(1080px/9);
+  width: calc(1920px/9);
   margin-left: auto;
   border: 2px black solid;
   border-radius: 8px;
