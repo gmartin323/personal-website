@@ -5,7 +5,6 @@ export default function Footer() {
 
   const { theme } = useContext(ThemeContext)
   
-
   return (
     <footer 
       style={{

@@ -14,10 +14,9 @@ export default function Contact() {
         color: theme.color
       }}
     >
-      <section className="contact-page-content-container short">
-        <h1>Contact Page goes here</h1> 
-      </section>
-      <section className="contact-page-links-container">
+      <section className="contact-page-content-container">
+        <h1>Contact</h1>
+        <div className="contact-page-links-container">
         <a 
           href="https://www.linkedin.com/in/george-martin-redev/"
           className="contact-link"
@@ -52,7 +51,10 @@ export default function Contact() {
           }
         </a>
 
+        </div>
       </section>
+       
+      
     </div>
   )
 }

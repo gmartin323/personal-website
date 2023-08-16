@@ -16,9 +16,13 @@ export default function Blog() {
       <h1>Blog</h1>
       <section className="cards-container">
         <div className="card"></div>
+        <p className="card-info">Blog 1</p>
         <div className="card"></div>
+        <p className="card-info">Blog 2</p>
         <div className="card"></div>
+        <p className="card-info">Blog 3</p>
         <div className="card"></div>
+        <p className="card-info">Blog 4</p>
       </section>
     </div>
   )
