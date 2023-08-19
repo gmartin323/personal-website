@@ -8,4 +8,7 @@ export default defineConfig({
   server: {
     open: './'
   },
+  /* optimizeDeps: {
+    exclude: ['react-locomotive-scroll']
+  } */
 })
