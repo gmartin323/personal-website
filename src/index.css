@@ -48,7 +48,7 @@ main {
 }
 
 header {
-  outline: 1px dashed orange;
+  /* outline: 1px dashed orange; */
   position: fixed;
   z-index: 10;
   top: 20px;
@@ -93,10 +93,11 @@ header button {
   cursor: pointer;
   margin-top: auto;
   margin-bottom: 20px;
+  font-size: 1rem;
 }
 
 .page-container {
-  outline: purple 1px solid;
+  /* outline: purple 1px solid; */
   position: fixed;
   left: 0;
   top: 0;
@@ -215,6 +216,10 @@ footer {
 }
 
 @media screen and (min-width: 1024px) {
+
+  header button {
+    font-size: 1.5rem;
+  }
   
   .contact-page-content-container h1 {
     font-size: 1.5rem;
