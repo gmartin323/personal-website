@@ -10,8 +10,8 @@ export default function Portfolio() {
 
   useEffect(() => {
     const scroll = new locomotiveScroll({
-      // el: scrollRef.current,
-      el: document.querySelector("[data-scroll-container]"),
+      el: scrollRef.current,
+      // el: document.querySelector("[data-scroll-container]"),
       smooth: true
     });
   });
