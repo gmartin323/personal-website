@@ -6,7 +6,7 @@ export default function Footer() {
   const { theme } = useContext(ThemeContext)
   
   return (
-    <footer 
+    <footer
       style={{
         backgroundColor: theme.footerBackground,
         color: theme.footerColor

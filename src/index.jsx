@@ -12,6 +12,8 @@ import Contact from "./pages/Contact"
 
 
 function App() {
+    
+
     function switchTheme() {
         setSiteTheme((prevTheme) => ({
             theme: prevTheme.theme === themes.dark ? themes.light : themes.dark,

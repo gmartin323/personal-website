@@ -14,7 +14,7 @@ export default function Header() {
 }
 
   return (
-    <header 
+    <header
       style={{
         backgroundColor: theme.headerBackground,
       }}

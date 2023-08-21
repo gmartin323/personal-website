@@ -1,12 +1,15 @@
 import React, { useContext } from "react"
 import { ThemeContext } from "../themes/ThemeContext"
+import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
 export default function Blog() {
-
-  const { theme } = useContext(ThemeContext)
+  const { theme } = useContext(ThemeContext)  
+  const { scroll } = useLocomotiveScroll()
+  console.log(scroll)
 
   return (
     <div 
+      data-scroll-section
       className="page-container"
       style={{
         backgroundColor: theme.background,
@@ -14,7 +17,7 @@ export default function Blog() {
       }}
     >
       {/* <h1>Blog</h1> */}
-      <section className="cards-container">
+      <section className="cards-container" data-scroll>
         <div className="card"></div>
         <p className="card-info">Blog 1</p>
         <div className="card"></div>
