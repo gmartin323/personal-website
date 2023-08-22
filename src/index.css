@@ -327,15 +327,39 @@ footer {
   }
 } */
 
-@media screen and (min-width: 425px) {
+@media screen and (max-width: 400px) {
+  .card {
+    height: calc(1080px/11);
+    width: calc(1920px/11);
+  }
+}
+
+@media screen and (min-width: 400px) {
+  .card {
+    height: calc(1080px/9);
+    width: calc(1920px/9);
+  }
+}
+
+@media screen and (min-width: 440px) {
+  .card {
+    height: calc(1080px/8);
+    width: calc(1920px/8);
+  }
+}
+
+@media screen and (min-width: 500px) {
   .card {
     height: calc(1080px/7);
     width: calc(1920px/7);
   }
 }
 
-@media screen and (max-width: 767px) {
-  
+@media screen and (min-width: 600px) {
+  .card {
+    height: calc(1080px/6);
+    width: calc(1920px/6);
+  }
 }
 
 @media screen and (min-width: 768px) {
