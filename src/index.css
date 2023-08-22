@@ -11,11 +11,11 @@
   box-sizing: border-box;
 }
 
-html, body {
+/* html, body {
   margin: 0; 
   height: 100%; 
   overflow: hidden
-}
+} */
 
 html {
   font-family: 'Carter One', cursive;
@@ -173,7 +173,7 @@ header button {
 footer {
   /* background-color: #161616;
   color: #aaaaaa; */
-  position: absolute;
+  position: fixed;
   z-index: 2;
   bottom: 0;
   height: 20px;
