@@ -312,7 +312,7 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width:375px) {
+/* @media screen and (max-width:375px) {
   .outer-container {
     display: flex;
     flex-direction: column;
@@ -321,7 +321,7 @@ footer {
   header {
     position: static;
   }
-}
+} */
 
 @media screen and (min-width: 425px) {
   .card {
