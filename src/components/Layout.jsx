@@ -11,7 +11,7 @@ export default function Layout() {
 
   const [preloader, setPreloader] = React.useState(true)
 
-  const [timer, setTimer] = React.useState(3)
+  const [timer, setTimer] = React.useState(4)
 
   const id = useRef(null)
 
@@ -36,7 +36,7 @@ export default function Layout() {
     <>
       {preloader ? (
         <>
-          <div className="loading-wrapper fade-out absolute">
+          <div className="loading-wrapper fade-in-out absolute">
             <h1>George Martin</h1>
             <h2>React Developer</h2>
           </div>

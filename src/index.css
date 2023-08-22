@@ -202,12 +202,12 @@ footer {
 
 /* UTILITY */
 
-.fade-out {
-  animation: fadeOut 1.6s;
-  -webkit-animation: fadeOut 1.6s;
-  -moz-animation: fadeOut 1.6s;
-  -o-animation: fadeOut 1.6s;
-  -ms-animation: fadeOut 1.6s;
+.fade-in-out {
+  animation: fadeInOut 2.8s;
+  -webkit-animation: fadeInOut 2.8s;
+  -moz-animation: fadeInOut 2.8s;
+  -o-animation: fadeInOut 2.8s;
+  -ms-animation: fadeInOut 2.8s;
 }
 
 .fade-out-delay {
@@ -216,7 +216,42 @@ footer {
   -moz-animation: fadeOut 2.1s;
   -o-animation: fadeOut 2.1s;
   -ms-animation: fadeOut 2.1s;
-  animation-delay: 1s;
+  animation-delay: 2s;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0}
+  40% { opacity: 1}
+  60% { opacity: 1}
+  100% { opacity: 0}
+}
+
+@-moz-keyframes fadeInOut {
+  0% { opacity: 0}
+  40% { opacity: 1}
+  60% { opacity: 1}
+  100% { opacity: 0}
+}
+
+@-webkit-keyframes fadeInOut {
+  0% { opacity: 0}
+  40% { opacity: 1}
+  60% { opacity: 1}
+  100% { opacity: 0}
+}
+
+@-o-keyframes fadeInOut {
+  0% { opacity: 0}
+  40% { opacity: 1}
+  60% { opacity: 1}
+  100% { opacity: 0}
+}
+
+@-ms-keyframes fadeInOut {
+  0% { opacity: 0}
+  40% { opacity: 1}
+  60% { opacity: 1}
+  100% { opacity: 0}
 }
 
 @keyframes fadeOut {
