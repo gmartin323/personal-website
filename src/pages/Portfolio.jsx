@@ -1,14 +1,13 @@
 import React, { useContext, useRef, useEffect } from "react"
 import { ThemeContext } from "../themes/ThemeContext"
-import { useLocomotiveScroll } from 'react-locomotive-scroll'
+
 
 export default function Portfolio() {
   const { theme } = useContext(ThemeContext) 
-  const { scroll } = useLocomotiveScroll()
 
   return (
       <div 
-        data-scroll="target"
+        data-scroll-section
         className="page-container"
         style={{
           backgroundColor: theme.background,

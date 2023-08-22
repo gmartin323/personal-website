@@ -1,10 +1,8 @@
 import React, { useContext } from "react"
 import { ThemeContext } from "../themes/ThemeContext"
-import { useLocomotiveScroll } from 'react-locomotive-scroll'
 
 export default function Home() {
   const { theme } = useContext(ThemeContext) 
-  const { scroll } = useLocomotiveScroll()
 
   return (
     <div 
