@@ -26,6 +26,16 @@ export default function Portfolio() {
           <p className="card-info">Ideal Food Picker</p>
           <div className="card"></div>
           <p className="card-info">Ideal Food Picker</p>
+          <div className="card"></div>
+          <p className="card-info">Ideal Food Picker</p>
+          <div className="card"></div>
+          <p className="card-info">Ideal Food Picker</p>
+          <div className="card"></div>
+          <p className="card-info">Ideal Food Picker</p>
+          <div className="card"></div>
+          <p className="card-info">Ideal Food Picker</p>
+          <div className="card"></div>
+          <p className="card-info">Ideal Food Picker</p>
         </section>
       </div>
   )

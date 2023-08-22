@@ -28,7 +28,6 @@ body::-webkit-scrollbar {
 body {
   -ms-overflow-style: none;
   scrollbar-width: none;
-
 }
 
 /* TYPOGRAPHY */
@@ -36,7 +35,7 @@ body {
 /* LAYOUT */
 
 main {
-  position: fixed;
+  /* position: fixed; */
   z-index: 2;
   left: 0;
   top: 0;
@@ -51,7 +50,8 @@ main {
   text-align: right;
   padding: 20px 20px 0 20px;
   white-space: nowrap;
-  min-height: calc(var(6.3100000000000005px, 1vh)*100);  
+  min-height: calc(var(6.3100000000000005px, 1vh)*100); 
+  overflow-y: scroll;
 }
 
 header {
@@ -105,13 +105,13 @@ header button {
 
 .page-container {
   /* outline: purple 1px solid; */
-  position: fixed;
+  /* position: fixed; */
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  padding: calc((20px) + 96px) calc(20px) 0 calc(20px);
+  /* overflow: hidden; */
+  padding: calc(96px) 0 calc((20px) + 96px) calc(20px);
   /* z-index: -1; */
   /* padding-right: 20px; */
 }
@@ -198,6 +198,10 @@ footer {
 
 .loading-wrapper h1 {
   text-transform: uppercase;
+}
+
+.loading-wrapper h2 {
+  font-style: italic;
 }
 
 /* UTILITY */
