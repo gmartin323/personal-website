@@ -7,10 +7,10 @@ import {themes, ThemeContext} from "./themes/ThemeContext"
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll';
 
 import Layout from "./components/Layout"
-import Home from "./pages/Home"
-import Portfolio from "./pages/Portfolio"
-import Blog from "./pages/Blog"
-import Contact from "./pages/Contact"
+import Self from "./pages/Self"
+import Constructs from "./pages/Constructs"
+import Thoughts from "./pages/Thoughts"
+import Connect from "./pages/Connect"
 
 
 function App() {
@@ -48,10 +48,10 @@ function App() {
                         > 
                         <Routes>
                             <Route path="/" element={<Layout />}>
-                                <Route index element={<Home />} />
-                                <Route path="portfolio" element={<Portfolio />}/>
-                                <Route path="blog" element={<Blog />}/>
-                                <Route path="contact" element={<Contact />}/>
+                                <Route index element={<Self />} />
+                                <Route path="constructs" element={<Constructs />}/>
+                                <Route path="thoughts" element={<Thoughts />}/>
+                                <Route path="connect" element={<Connect />}/>
                             </Route>
                         </Routes>
                     </LocomotiveScrollProvider>

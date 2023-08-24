@@ -33,22 +33,28 @@ export default function Header() {
       
       <nav className="navigation-menu">
         <NavLink 
-          to="/portfolio"
+          to="/"
           style={({ isActive }) => isActive ? activeStyles : null}
         >
-          Portfolio
+          Self
         </NavLink>
         <NavLink 
-          to="/blog"
+          to="/constructs"
           style={({ isActive }) => isActive ? activeStyles : null}
         >
-          Blog
+          Contructs
         </NavLink>
         <NavLink 
-          to="/contact"
+          to="/thoughts"
           style={({ isActive }) => isActive ? activeStyles : null}
         >
-          Contact
+          Thoughts
+        </NavLink>
+        <NavLink 
+          to="/connect"
+          style={({ isActive }) => isActive ? activeStyles : null}
+        >
+          Connect
         </NavLink>
       </nav>
       <button onClick={switchTheme}>

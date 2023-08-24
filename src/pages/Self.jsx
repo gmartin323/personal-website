@@ -1,7 +1,7 @@
 import React, { useContext } from "react"
 import { ThemeContext } from "../themes/ThemeContext"
 
-export default function Home() {
+export default function Self() {
   const { theme } = useContext(ThemeContext) 
 
   return (
