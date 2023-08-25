@@ -171,8 +171,8 @@ header button {
   position: absolute;
   flex-grow: 1;
   text-align: right;
-  right: 20px;
-  bottom: 20px;
+  right: 0;
+  bottom: 40px;
   padding-bottom: 40px;
   gap: 1rem;
 }
