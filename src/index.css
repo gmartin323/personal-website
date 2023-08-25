@@ -30,6 +30,17 @@ body {
   scrollbar-width: none;
 }
 
+html {
+  overflow: hidden;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  /* position: fixed; */
+  overflow-y: scroll;
+}
+
 /* TYPOGRAPHY */
 
 /* LAYOUT */
