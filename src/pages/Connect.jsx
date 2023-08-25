@@ -1,12 +1,11 @@
 import React, { useContext } from "react"
 import { ThemeContext } from "../themes/ThemeContext"
 
-export default function Contact() {
+export default function Connect() {
   const { theme } = useContext(ThemeContext)
 
   return (
     <div
-      data-scroll-section
       className="page-container"
       style={{
         backgroundColor: theme.background,

@@ -15,7 +15,7 @@ export default function Portfolio() {
         }}
       >
         <section 
-          className="cards-container"
+          className="cards-container data-scroll"
         >
           <div className="card" style={{backgroundImage:"url(images/projects/ideal-food-picker-react.png)"}}></div>
           <p className="card-info">Ideal Food Picker</p>
