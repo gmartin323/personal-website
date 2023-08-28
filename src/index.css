@@ -172,11 +172,11 @@ header button {
   position: absolute;
   flex-grow: 1;
   text-align: right;
-  /* right: 0; */
+  right: 0;
   /* bottom: 40px; */
-  right: 20px;
+  /* padding-right: 20px; */
   bottom: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
   gap: 1rem;
 }
 
